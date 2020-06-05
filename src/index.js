@@ -1,7 +1,8 @@
-import { saludar } from "./js/componentes";
 import "./../styles.css";
+import { Todo, TodoList } from "./class";
 
-import img from "./assets/webpack.png";
-const nombre = "Marcos Gallardo Pérez";
+const todo = new Todo("regar");
+const todoList = new TodoList("regar");
 
-saludar(nombre);
+todoList.newTodo(todo);
+console.log("regar", todoList);
